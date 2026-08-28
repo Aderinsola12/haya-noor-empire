@@ -134,19 +134,19 @@ const images = {
     /* NEW PRODUCTS */
 
     "Abaya with Hijab & Niqab Set":
-        "images/abaya-hijab-niqab.jpg",
+        "images/abaya with hijab & niqab set.jpg",
 
     "Half Khimar with Niqab Set":
-        "images/half-khimar-niqab.jpg",
+        "images/full.jpg",
 
     "Full Abaya + Half Khimar with Niqab Design Set":
-        "images/full-abaya-half-khimar-niqab.jpg",
+        "images/full set abaya.jpg",
 
     "Jersey Scarf - Small Size":
-        "images/jersey-scarf-small.jpg",
+        "images/jersey Scarf-small size.jpg",
 
     "Jersey Scarf - Big Size":
-        "images/jersey-scarf-big.jpg"
+        "images/jersey scarf-big size.jpg"
 
 };
 
