@@ -97,46 +97,61 @@ function updateCartCount() {
 
 
 /* ==================================================
-   PRODUCT IMAGE
+PRODUCT IMAGE
 ================================================== */
 
 function getProductImage(productName) {
 
-    const images = {
+const images = {
 
-        "Hijab":
-            "images/hijab.jpg",
+    /* EXISTING PRODUCTS */
 
-        "Khimar":
-            "images/khimar.jpg",
+    "Hijab":
+        "images/hijab.jpg",
 
-        "Niqab":
-            "images/niqab.jpg",
+    "Khimar":
+        "images/khimar.jpg",
 
-        "Abaya":
-            "images/abaya.jpg",
+    "Niqab":
+        "images/niqab.jpg",
 
-        "Hijab Pins":
-            "images/hijab-pins.jpg",
+    "Abaya":
+        "images/abaya.jpg",
 
-        "Gloves":
-            "images/gloves.jpg",
+    "Hijab Pins":
+        "images/hijab-pins.jpg",
 
-        "Sleeves":
-            "images/sleeves.jpg",
+    "Gloves":
+        "images/gloves.jpg",
 
-        "Inner Caps":
-            "images/inner-cap.jpg"
-           
-       "Abaya with Hijab & Niqab Set"
-            "images/abaya with hijab & niqab set.jpg",
+    "Sleeves":
+        "images/sleeves.jpg",
 
-       "Half khimar with niqa set"
-             "images/  full.jpg", 
-    };
+    "Inner Caps":
+        "images/inner-cap.jpg",
 
 
-    return images[productName] || "";
+    /* NEW PRODUCTS */
+
+    "Abaya with Hijab & Niqab Set":
+        "images/abaya-hijab-niqab.jpg",
+
+    "Half Khimar with Niqab Set":
+        "images/half-khimar-niqab.jpg",
+
+    "Full Abaya + Half Khimar with Niqab Design Set":
+        "images/full-abaya-half-khimar-niqab.jpg",
+
+    "Jersey Scarf - Small Size":
+        "images/jersey-scarf-small.jpg",
+
+    "Jersey Scarf - Big Size":
+        "images/jersey-scarf-big.jpg"
+
+};
+
+
+return images[productName] || "";
 
 }
 
