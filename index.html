@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Haya Noor Empire | Modest Fashion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ==================================================
+     LOADING SCREEN
+================================================== -->
+
+<div id="loading-screen">
+
+    <div class="loading-logo">
+        HAYA NOOR
+        <span>EMPIRE</span>
+    </div>
+
+    <div class="loading-spinner"></div>
+
+    <p>Modesty • Elegance • Confidence</p>
+
+</div>
+
+
+<!-- ==================================================
+     NAVIGATION
+================================================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            HAYA NOOR <span>EMPIRE</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#shop">Shop</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#reviews">Reviews</a>
+            </li>
+
+            <li>
+                <a href="#newsletter">Join Us</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+            <li>
+                <a href="#cart" class="cart-icon" aria-label="Shopping cart">
+                    🛍️
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()"
+            aria-label="Open navigation menu">
+            ☰
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="welcome">
+            WELCOME TO HAYA NOOR EMPIRE
+        </p>
+
+        <h1>
+            Modesty Meets <span>Elegance.</span>
+        </h1>
+
+        <p class="hero-description">
+            Discover beautiful, comfortable and affordable modest wear
+            designed to make you feel confident and elegant every day.
+        </p>
+
+        <a href="#shop" class="main-btn">
+            Shop Collection
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     INTRODUCTION
+================================================== -->
+
+<section class="intro">
+
+    <p class="gold-text">
+        MODEST • BEAUTIFUL • CONFIDENT
+    </p>
+
+    <h2>
+        Elegance in Every Layer
+    </h2>
+
+    <p>
+        At Haya Noor Empire, we believe modesty and fashion can beautifully
+        exist together. Discover pieces made for your everyday modest style.
+    </p>
+
+</section>
+
+
+<!-- ==================================================
+     FEATURED COLLECTION
+================================================== -->
+
+<section class="featured">
+
+    <div class="section-heading">
+
+        <p>OUR FAVOURITES</p>
+
+        <h2>Featured Collection</h2>
+
+    </div>
+
+
+    <div class="featured-container">
+
+        <!-- Hijab -->
+
+        <div class="featured-card">
+
+            <img
+                src="images/hijab.jpg"
+                alt="Haya Noor Empire Hijab"
+            >
+
+            <div class="featured-info">
+
+                <span>BEST SELLER</span>
+
+                <h3>Elegant Hijab</h3>
+
+                <p>
+                    Comfortable, beautiful and perfect
+                    for everyday modest styling.
+                </p>
+
+                <a href="#shop" class="featured-btn">
+                    Shop Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Khimar -->
+
+        <div class="featured-card">
+
+            <img
+                src="images/khimar.jpg"
+                alt="Haya Noor Empire Khimar"
+            >
+
+            <div class="featured-info">
+
+                <span>POPULAR</span>
+
+                <h3>Flowing Khimar</h3>
+
+                <p>
+                    A graceful and comfortable piece
+                    for effortless modest elegance.
+                </p>
+
+                <a href="#shop" class="featured-btn">
+                    Shop Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Abaya -->
+
+        <div class="featured-card">
+
+            <img
+                src="images/abaya.jpg"
+                alt="Haya Noor Empire Abaya"
+            >
+
+            <div class="featured-info">
+
+                <span>NEW STYLE</span>
+
+                <h3>Elegant Abaya</h3>
+
+                <p>
+                    Beautiful modest fashion designed
+                    for everyday wear and special occasions.
+                </p>
+
+                <a href="#shop" class="featured-btn">
+                    Shop Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     SHOP
+================================================== -->
+
+<section class="shop" id="shop">
+
+    <div class="section-heading">
+
+        <p>OUR COLLECTION</p>
+
+        <h2>Shop Our Modest Essentials</h2>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="shop-tools">
+
+        <input
+            type="text"
+            id="product-search"
+            placeholder="Search for a product..."
+            oninput="searchProducts()"
+        >
+
+    </div>
+
+
+    <!-- CATEGORIES -->
+
+    <div class="category-buttons">
+
+        <button onclick="filterProducts('all')">
+            All
+        </button>
+
+        <button onclick="filterProducts('hijab')">
+            Hijab
+        </button>
+
+        <button onclick="filterProducts('khimar')">
+            Khimar
+        </button>
+
+        <button onclick="filterProducts('niqab')">
+            Niqab
+        </button>
+
+        <button onclick="filterProducts('abaya')">
+            Abaya
+        </button>
+
+        <button onclick="filterProducts('accessories')">
+            Accessories
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div class="products">
+
+
+        <!-- HIJAB -->
+
+        <div class="product-card" data-category="hijab">
+
+            <div class="product-image">
+
+                <img
+                    src="images/hijab.jpg"
+                    alt="Haya Noor Empire Hijab"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Hijab</h3>
+
+                <p>
+                    Elegant and comfortable hijabs for everyday styling.
+                </p>
+
+                <h4 class="price">
+                    ₦6,000
+                </h4>
+
+                <button onclick="addToCart('Hijab', 6000)">
+                    Add to Cart
+                </button>
+
+                <button
+                    class="details-btn"
+                    onclick="showProductDetails(
+                        'Hijab',
+                        'images/hijab.jpg',
+                        'Elegant and comfortable hijabs for everyday styling.',
+                        6000
+                    )">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- KHIMAR -->
+
+        <div class="product-card" data-category="khimar">
+
+            <div class="product-image">
+
+                <img
+                    src="images/khimar.jpg"
+                    alt="Haya Noor Empire Khimar"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Khimar</h3>
+
+                <p>
+                    Beautiful flowing khimars designed for comfort.
+                </p>
+
+                <h4 class="price">
+                    ₦15,000
+                </h4>
+
+                <button onclick="addToCart('Khimar', 15000)">
+                    Add to Cart
+                </button>
+
+                <button
+                    class="details-btn"
+                    onclick="showProductDetails(
+                        'Khimar',
+                        'images/khimar.jpg',
+                        'Beautiful flowing khimar designed for comfort and elegant modest wear.',
+                        15000
+                    )">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- NIQAB -->
+
+        <div class="product-card" data-category="niqab">
+
+            <div class="product-image">
+
+                <img
+                    src="images/niqab.jpg"
+                    alt="Haya Noor Empire Niqab"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Niqab</h3>
+
+                <p>
+                    Comfortable and simple niqabs for your modest wardrobe.
+                </p>
+
+                <h4 class="price">
+                    ₦8,000
+                </h4>
+
+                <button onclick="addToCart('Niqab', 8000)">
+                    Add to Cart
+                </button>
+
+                <button
+                    class="details-btn"
+                    onclick="showProductDetails(
+                        'Niqab',
+                        'images/niqab.jpg',
+                        'Comfortable and simple niqabs for your modest wardrobe.',
+                        8000
+                    )">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ABAYA -->
+
+        <div class="product-card" data-category="abaya">
+
+            <div class="product-image">
+
+                <img
+                    src="images/abaya.jpg"
+                    alt="Haya Noor Empire Abaya"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Abaya</h3>
+
+                <p>
+                    Elegant abayas for everyday wear and special occasions.
+                </p>
+
+                <h4 class="price">
+                    ₦12,000
+                </h4>
+
+                <button onclick="addToCart('Abaya', 12000)">
+                    Add to Cart
+                </button>
+
+                <button
+                    class="details-btn"
+                    onclick="showProductDetails(
+                        'Abaya',
+                        'images/abaya.jpg',
+                        'Elegant abaya perfect for everyday wear and special occasions.',
+                        12000
+                    )">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- HIJAB PINS -->
+
+        <div class="product-card" data-category="accessories">
+
+            <div class="product-image">
+
+                <img
+                    src="images/hijab-pins.jpg"
+                    alt="Haya Noor Empire Hijab Pins"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Hijab Pins</h3>
+
+                <p>
+                    Stylish accessories to complete your hijab look.
+                </p>
+
+                <h4 class="price">
+                    ₦800
+                </h4>
+
+                <button onclick="addToCart('Hijab Pins', 800)">
+                    Add to Cart
+                </button>
+
+                <button
+                    class="details-btn"
+                    onclick="showProductDetails(
+                        'Hijab Pins',
+                        'images/hijab-pins.jpg',
+                        'Stylish accessories to complete your hijab look.',
+                        800
+                    )">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- GLOVES -->
+
+        <div class="product-card" data-category="accessories">
+
+            <div class="product-image">
+
+                <img
+                    src="images/gloves.jpg"
+                    alt="Haya Noor Empire Gloves"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Gloves</h3>
+
+                <p>
+                    Simple and comfortable modest gloves.
+                </p>
+
+                <h4 class="price">
+                    ₦5,000
+                </h4>
+
+                <button onclick="addToCart('Gloves', 5000)">
+                    Add to Cart
+                </button>
+
+                <button
+                    class="details-btn"
+                    onclick="showProductDetails(
+                        'Gloves',
+                        'images/gloves.jpg',
+                        'Simple and comfortable modest gloves.',
+                        5000
+                    )">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SLEEVES -->
+
+        <div class="product-card" data-category="accessories">
+
+            <div class="product-image">
+
+                <img
+                    src="images/sleeves.jpg"
+                    alt="Haya Noor Empire Sleeves"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Sleeves</h3>
+
+                <p>
+                    Comfortable sleeves for extra coverage.
+                </p>
+
+                <h4 class="price">
+                    ₦5,000
+                </h4>
+
+                <button onclick="addToCart('Sleeves', 5000)">
+                    Add to Cart
+                </button>
+
+                <button
+                    class="details-btn"
+                    onclick="showProductDetails(
+                        'Sleeves',
+                        'images/sleeves.jpg',
+                        'Comfortable sleeves for extra coverage.',
+                        5000
+                    )">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- INNER CAPS -->
+
+        <div class="product-card" data-category="accessories">
+
+            <div class="product-image">
+
+                <img
+                    src="images/inner-cap.jpg"
+                    alt="Haya Noor Empire Inner Caps"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Inner Cap</h3>
+
+                <p>
+                    Comfortable inner caps for a secure hijab style.
+                </p>
+
+                <h4 class="price">
+                    ₦1,500
+                </h4>
+
+                <button onclick="addToCart('Inner Cap', 1500)">
+                    Add to Cart
+                </button>
+
+                <button
+                    class="details-btn"
+                    onclick="showProductDetails(
+                        'Inner Caps',
+                        'images/inner-cap.jpg',
+                        'Comfortable inner caps for a secure hijab style.',
+                        1500
+                    )">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     ABOUT
+================================================== -->
+
+<section class="about" id="about">
+
+    <div class="about-content">
+
+        <p class="gold-text">
+            ABOUT US
+        </p>
+
+        <h2>
+            Welcome to Haya Noor Empire
+        </h2>
+
+        <p>
+            Haya Noor Empire is a modest fashion brand created for women
+            who want to express their style while embracing modesty.
+        </p>
+
+        <p>
+            From beautiful hijabs and khimars to elegant abayas and
+            everyday accessories, we bring modest essentials together
+            in one place.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     WHY CHOOSE US
+================================================== -->
+
+<section class="why-us">
+
+    <div class="section-heading">
+
+        <p>WHY HAYA NOOR EMPIRE?</p>
+
+        <h2>Made With You in Mind</h2>
+
+    </div>
+
+
+    <div class="features">
+
+        <div class="feature">
+
+            <div class="feature-icon">✦</div>
+
+            <h3>Elegant</h3>
+
+            <p>
+                Beautiful pieces designed for effortless modest style.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">♡</div>
+
+            <h3>Comfortable</h3>
+
+            <p>
+                Modest essentials you can feel comfortable wearing.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">✧</div>
+
+            <h3>Affordable</h3>
+
+            <p>
+                Stylish modest fashion without breaking the bank.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     SHOPPING CART
+================================================== -->
+
+<section class="cart-section" id="cart">
+
+    <div class="section-heading">
+
+        <p>YOUR SHOPPING BAG</p>
+
+        <h2>Shopping Cart 🛍️</h2>
+
+    </div>
+
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+
+    <div class="cart-total">
+
+        <strong>
+            Total: ₦<span id="cart-total">0</span>
+        </strong>
+
+    </div>
+
+
+    <div class="cart-buttons">
+
+        <button
+            class="clear-cart-btn"
+            onclick="clearCart()">
+            Clear Cart 🗑️
+        </button>
+
+        <button
+            class="checkout-btn"
+            onclick="checkout()">
+            Checkout on WhatsApp 📱
+        </button>
+
+    </div>
+
+
+    <!-- CHECKOUT -->
+
+    <div class="checkout-intro">
+
+        <p class="gold-text">
+            READY TO ORDER?
+        </p>
+
+        <h2>
+            Complete Your Order
+        </h2>
+
+        <p>
+            Enter your details below and we'll receive your order
+            directly on WhatsApp.
+        </p>
+
+    </div>
+
+
+    <div id="checkout-form" class="checkout-form">
+
+        <h2>
+            Complete Your Order
+        </h2>
+
+        <p>
+            Please enter your details before placing your order.
+        </p>
+
+
+        <!-- ORDER SUMMARY -->
+
+        <div class="order-summary">
+
+            <h3>
+                🛍️ Your Order Summary
+            </h3>
+
+            <div id="checkout-order-items">
+            </div>
+
+            <div class="checkout-summary-total">
+
+                Total: ₦<span id="checkout-total">0</span>
+
+            </div>
+
+        </div>
+
+
+        <label for="customer-name">
+            Full Name
+        </label>
+
+        <input
+            type="text"
+            id="customer-name"
+            placeholder="Enter your full name"
+            required
+        >
+
+
+        <label for="customer-phone">
+            Phone Number
+        </label>
+
+        <input
+            type="tel"
+            id="customer-phone"
+            placeholder="08012345678"
+            required
+        >
+
+
+        <label for="customer-address">
+            Delivery Address
+        </label>
+
+        <textarea
+            id="customer-address"
+            placeholder="Enter your delivery address"
+            required></textarea>
+
+
+        <label for="customer-city">
+            City
+        </label>
+
+        <input
+            type="text"
+            id="customer-city"
+            placeholder="Enter your city"
+            required
+        >
+
+
+        <label for="payment-method">
+            Payment Method
+        </label>
+
+        <select id="payment-method">
+
+            <option value="Bank Transfer">
+                Bank Transfer
+            </option>
+
+            <option value="Cash on Delivery">
+                Cash on Delivery
+            </option>
+
+        </select>
+
+
+        <button
+            type="button"
+            class="place-order-btn"
+            onclick="sendOrderToWhatsApp()">
+
+            Place Order on WhatsApp 📱
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     PRODUCT DETAILS MODAL
+================================================== -->
+
+<div
+    id="product-details"
+    class="product-details">
+
+    <div class="details-content">
+
+        <button
+            class="close-details"
+            onclick="closeProductDetails()"
+            aria-label="Close">
+            ×
+        </button>
+
+
+        <img
+            id="details-image"
+            src=""
+            alt="Product"
+        >
+
+
+        <div class="details-info">
+
+            <h2 id="details-name"></h2>
+
+            <p id="details-description"></p>
+
+            <h3 id="details-price"></h3>
+
+            <button
+                id="details-cart-button"
+                class="details-cart-btn">
+
+                Add to Cart 🛍️
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     CUSTOMER REVIEWS
+================================================== -->
+
+<section class="reviews" id="reviews">
+
+    <div class="section-heading">
+
+        <p>WHAT OUR CUSTOMERS SAY</p>
+
+        <h2>Loved by Modest Women</h2>
+
+    </div>
+
+
+    <div class="reviews-container">
+
+        <div class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "I absolutely love my hijab! The quality is beautiful
+                and it is so comfortable to wear."
+            </p>
+
+            <h3>
+                — Waliyah
+            </h3>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "My khimar arrived beautifully packaged. The fabric
+                is lovely and the service was excellent."
+            </p>
+
+            <h3>
+                — Lateefah
+            </h3>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Haya Noor Empire has become one of my favourite places
+                for affordable modest fashion."
+            </p>
+
+            <h3>
+                — Maryam
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     NEWSLETTER
+================================================== -->
+
+<section class="newsletter" id="newsletter">
+
+    <div class="newsletter-content">
+
+        <p class="gold-text">
+            STAY CONNECTED
+        </p>
+
+        <h2>
+            Join the Haya Noor Family
+        </h2>
+
+        <p>
+            Be the first to know about new collections, special offers
+            and beautiful modest fashion updates.
+        </p>
+
+
+        <form
+            class="newsletter-form"
+            onsubmit="subscribeNewsletter(event)">
+
+            <input
+                type="email"
+                id="newsletter-email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+
+        <p id="newsletter-message"></p>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     CONTACT
+================================================== -->
+
+<section class="contact" id="contact">
+
+    <div class="contact-content">
+
+        <p class="gold-text">
+            LET'S CONNECT
+        </p>
+
+        <h2>
+            Ready to Find Your Perfect Modest Look?
+        </h2>
+
+        <p>
+            Contact us to place your order or ask about our products.
+        </p>
+
+
+        <a
+            href="https://wa.me/2349016497065"
+            class="whatsapp-btn"
+            target="_blank"
+            rel="noopener">
+
+            Order on WhatsApp
+
+        </a>
+
+
+        <!-- SOCIAL MEDIA -->
+
+<div class="social-links">
+
+    <p>
+        Follow Haya Noor Empire
+    </p>
+
+    <a
+        href="https://www.instagram.com/hayanoor_empire/"
+        class="social-btn"
+        target="_blank"
+        rel="noopener">
+        Instagram: @hayanoor_empire
+    </a>
+
+    <a
+        href="https://www.tiktok.com/@hayanoor_empire"
+        class="social-btn"
+        target="_blank"
+        rel="noopener">
+        TikTok: @hayanoor_empire
+    </a>
+
+</div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <div class="footer-logo">
+        HAYA NOOR <span>EMPIRE</span>
+    </div>
+
+    <p>
+        Modesty • Elegance • Confidence
+    </p>
+
+    <p class="copyright">
+        © 2026 Haya Noor Empire. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<button
+    id="back-to-top"
+    onclick="scrollToTop()"
+    title="Back to top"
+    aria-label="Back to top">
+
+    ↑
+
+</button>
+
+
+<!-- ==================================================
+     FLOATING WHATSAPP
+================================================== -->
+
+<a
+    href="https://wa.me/2349016497065"
+    class="floating-whatsapp"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with Haya Noor Empire on WhatsApp">
+
+    💬
+
+</a>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
