@@ -51,7 +51,7 @@ function addToCart(productName, productPrice) {
             price: productPrice,
 
             quantity: 1
-
+           
         });
 
     }
@@ -127,7 +127,12 @@ function getProductImage(productName) {
 
         "Inner Caps":
             "images/inner-cap.jpg"
+           
+       "Abaya with Hijab & Niqab Set"
+            "images/abaya with hijab & niqab set.jpg",
 
+       "Half khimar with niqa set"
+             "images/  full.jpg", 
     };
 
 
